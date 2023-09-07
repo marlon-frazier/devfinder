@@ -1,13 +1,124 @@
-body {
+*, *::before, *::after{
+  box-sizing: border-box;
+  }
+  
+  *{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+  padding: 0;
+  font: inherit;
+  }
+  
+  html{
+  font-size: 62.5%;
+  }
+  
+  body{
+  min-height: 100vh;
+  font-size: 1.6em;
+  background-color: #F6F8FF;
+  font-family: 'Space Mono', monospace;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+  
+  img, picture, svg, video{
+  display: block;
+  max-width: 100%;
+  }
+  
+  input, textarea, button, select{
+  font: inherit;
+  }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
+  .app{
+    min-width: 55em;
+  }
+
+  .logo-container{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.5em;
+  }
+
+  .dark-toggle{
+    display: flex;
+    gap: .5em;
+    align-items: center;
+  }
+
+  .search-bar{
+    background-color: white;
+    padding: 1em;
+    border-radius: .9em;
+    box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.20);
+  }
+
+  form{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  form input{
+    padding: .9em;
+    border: none;
+    width: 100%;
+  }
+
+  form button{
+    border: none;
+    padding: .9em;
+    border-radius: .6em;
+    background-color: #0079FF;
+    color: white;
+  }
+
+  .profile-container{
+    background-color: white;
+    border-radius: .9em;
+    box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.20);
+    margin-top: 1em;
+    padding: 1.5em;
+  }
+
+  .bio{
+    display: flex;
+  }
+
+  .bio img{
+    margin: 1em;
+  }
+
+  .username{
+    display: flex;
+    justify-content: space-between;
+    gap: 30em;
+    align-items: center;
+  }
+
+  .stats{
+    background-color: #F6F8FF;
+    border-radius: .6em;
+    padding: 1em 1.5em;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .category{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .network{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1em;
+  }
+
+  .link{
+    display: flex;
+    gap: 1em;
+    margin-bottom: 1em;
+  }
+
